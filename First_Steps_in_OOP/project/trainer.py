@@ -7,6 +7,10 @@ class Trainer:
         self.pokemons = []
 
     def add_pokemon(self, pokemon: Pokemon):
+        # what is "pokemon: Pokemon" the first part is the name of the attribute that we're going to use in the
+        # current method.
+        # The part after ":" explain that this is class "Pokemon" it's not necessary to be used
+        # but is highly recommended.
         if pokemon in self.pokemons:
             return f"This pokemon is already caught"
         self.pokemons.append(pokemon)
